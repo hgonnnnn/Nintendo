@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo 리뉴얼</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(function () {
+            /* 메인 비주얼 슬라이드 */
+            var swiper2 = new Swiper(".main", {
+                grabCursor: true,
+                effect: "creative",
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                creativeEffect: {
+                    prev: {
+                        shadow: true,
+                        translate: ["-120%", 0, -500],
+                    },
+                    next: {
+                        shadow: true,
+                        translate: ["120%", 0, -500],
+                    },
+                },
+            });
+            /* section02 슬라이드 */
+            var swiper = new Swiper(".section02_slide", {
+                slidesPerView: 3.2,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1440: {
+                        slidesPerView: 4.5,
+                    },
+                    1290: {
+                        slidesPerView: 4,
+                    },
+                    1090: {
+                        slidesPerView: 3.5,
+                    },
+                },
+            });
+            /* section04 슬라이드 */
+            var swiper = new Swiper(".section04_slide", {
+                slidesPerView: 3.2,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1440: {
+                        slidesPerView: 4.5,
+                    },
+                    1290: {
+                        slidesPerView: 4,
+                    },
+                    1090: {
+                        slidesPerView: 3.5,
+                    },
+                },
+            });
+            /* 공지사항 슬라이드 */
+            var swiper = new Swiper(".section06_slide", {
+                slidesPerView: 3.2,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1290: {
+                        slidesPerView: 4,
+                    },
+                    1090: {
+                        slidesPerView: 3.5,
+                    },
+                },
+            });
+
+        }); //script end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/icon/logo.svg" alt="로고">
+                </a>
+            </h1>
+            <nav class="pc_nav pc">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01">Nintendo</a>
+                        <ul class="depth02">
+                            <li><a href="#">Nintendo Switch</a></li>
+                            <li><a href="#">소프트웨어</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">플레이</a>
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">뉴스</a>
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">캐릭터</a>
+                        <ul class="depth02">
+                            <li><a href="#">마리오</a></li>
+                            <li><a href="#">젤다의 전설</a></li>
+                            <li><a href="#">별의 커비</a></li>
+                            <li><a href="#">스플래툰</a></li>
+                            <li><a href="#">피크민</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">고객지원</a>
+                        <ul class="depth02">
+                            <li><a href="#">Nintendo Switch<br>고객지원</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">온라인 수리접수</a></li>
+                            <li><a href="#">온라인 고객 상담</a></li>
+                            <li><a href="#">Nintendo Switch<br>Online 서포트</a></li>
+                            <li><a href="#">네트워크 장애<br> 발생 상황</a></li>
+                            <li><a href="#">닌텐도 e숍</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">스토어</a>
+                    </li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .pc_nav end -->
+            <div class="util">
+                <button>
+                    <img src="img/icon/search.svg" alt="찾기">
+                </button>
+                <button>
+                    <img src="img/icon/Vector.svg" alt="마이페이지">
+                </button>
+                <button>
+                    <img src="img/icon/Vector-1.svg" alt="장바구니">
+                </button>
+                <button>
+                    <img src="img/icon/menu.svg" alt="메뉴">
+                </button>
+            </div><!-- util end -->
+        </div><!-- .inner end -->
+    </header><!-- .header end -->
+
+    <div class="main_visual">
+            <div class="swiper main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/main visual.png" alt="메인01" class="normal">
+                        <img src="img/main-visual.png" alt="메인01 반응형" class="plus">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main02.webp" alt="메인02">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main03.webp" alt="메인03" class="normal">
+                        <img src="img/main-visual02.png" alt="메인03 반응형" class="plus">
+                    </div>
+                </div><!-- swiper_wrapper end -->
+            </div><!-- .main end -->
+    </div><!-- .main_visual end -->
+
+    <section class="section01">
+        <div class="inner">
+            <div class="item left">
+                <span>NINTENDO</span>
+                <div class="text">
+                    <h3>SWITCH</h3>
+                    <button>상품 보러가기 <img src="img/icon/Vector-3.svg" alt="바로가기"></button>
+                </div><!-- .text end -->
+                <img src="img/box01.png" alt="스위치" class="box01">
+            </div><!-- .item end -->
+            <div class="item right">
+                <span>NINTENDO</span>
+                <div class="text">
+                    <h3>소프트웨어</h3>
+                    <button>상품 보러가기 <img src="img/icon/Vector-3.svg" alt="바로가기"></button>
+                </div><!-- .text end -->
+                <img src="img/box02.png" alt="소프트웨어" class="box02">
+            </div><!-- .item end -->
+        </div><!-- .inner end -->
+    </section><!-- .section01 end -->
+
+    <section class="section02">
+        <div class="inner">
+            <h3>New in</h3>
+            <p>새롭게 선보이는 게임을 지금 바로 즐겨보세요.</p>
+            <div #swiperRef="" class="swiper section02_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec01/Group 16.png" alt="게임01">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>슈퍼 마리오브라더스 원더</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec01/Rectangle 6.png" alt="게임02">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>루이지 멘션 2 HD</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec01/Rectangle 7.png" alt="게임03">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>프린세스 피치 쇼타임</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec01/Rectangle 8.png" alt="게임04">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>젤다의 전설</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec01/Rectangle 9.png" alt="게임05">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>닌텐도 월드 챔피언</strong>
+                                        <span>₩84,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec01/Group 17.png" alt="게임06">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>소닉 X 셰도우</strong>
+                                        <span>₩44,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> -->
+            </div>
+        </div><!-- .inner end -->
+    </section><!-- .section02 end -->
+
+    <section class="section03">
+        <img src="img/mario_cart.svg" alt="마리오2" class="sec03_main">
+        <div class="button">
+            <button>구입하기</button>
+            <button>더 알아보기</button>
+        </div>
+        <img src="img/Group 25.svg" alt="로고" class="sec03_logo">
+    </section><!-- .section03 end -->
+
+    <section class="section04">
+        <div class="inner">
+            <h3>Most Popular</h3>
+            <p>인기 상품</p>
+            <div #swiperRef="" class="swiper section04_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec02/box01.png" alt="게임01">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>닌텐도 스위치 스포츠</strong>
+                                        <span>₩44,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec02/box02.png" alt="게임02">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>별의 커비 디럭스</strong>
+                                        <span>₩84,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec02/box04.png" alt="게임03">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>페이퍼 마리오</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec02/Rectangle 7.png" alt="게임04">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>모여봐요 동물의숲</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec02/Rectangle 10.png" alt="게임05">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>포켓몬스터 스칼렛 & 바이올렛</strong>
+                                        <span>₩64,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/sec02/ring.jpg" alt="게임06">
+                            <div class="item">
+                                <div class="top">
+                                    <div class="left">
+                                        <strong>링 피트 어드벤처</strong>
+                                        <span>₩84,800</span>
+                                    </div>
+                                    <img src="img/icon/이용등급.svg.svg" alt="전체이용가">
+                                </div><!-- .top end -->
+                                <button>더 알아보기</button>
+                            </div><!-- .item end -->
+                        </div>
+                    </div><!-- .swiper_slide end -->
+                </div><!-- .swiper_wrapper end -->
+            </div><!-- .section04_slide end -->
+
+        </div><!-- .inner end -->
+    </section><!-- .section04 end -->
+
+    <section class="section05">
+        <div class="inner">
+            <div class="text">
+                <h3>Nintendo Switch OLED</h3>
+                <p>선명한 색감, 자유로운 각도.</p>
+                <div class="button">
+                    <button>구입하기</button>
+                    <button>더 알아보기</button>
+                </div><!-- .button end -->
+            </div><!-- .text end -->
+            <img src="img/pic_bigscreen 1.png" alt="닌텐도01" class="big">
+            <img src="img/pct_other3 1.png" alt="닌텐도02" class="small">
+        </div><!-- .inner end -->
+    </section><!-- .section05 end -->
+
+    <section class="section06">
+        <div class="inner">
+            <h3>News & Update</h3>
+            <p>새로운 소식을 만나보세요.</p>
+            <a href="#">더 보러가기 <img src="img/icon/Vector-3 1.svg" alt="바로가기"></a>
+            <div #swiperRef="" class="swiper section06_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/news01.png" alt="공지01">
+                            <p class="top">스타필드 수원점에서 Nintendo Switch 체험 이벤트 개최!</p>
+                            <p class="btm">2024.8.23.</p>
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/Group 22.png" alt="공지02">
+                            <p class="top">2024년 상반기 다운로드 랭킹.</p>
+                            <p class="btm">2024.07.29.</p>
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/Group 19.png" alt="공지03">
+                            <p class="top">『패미컴 탐정 크루 에미오
+                                -웃는 남자-』의 티저 페이지가
+                                공개되었습니다.</p>
+                            <p class="btm">2024.07.25.</p>
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/Group 21.png" alt="공지04">
+                            <p class="top">「모여봐요 동물의 숲 × 코엑스
+                                아쿠아리움」 7월 29일(월) 오픈!</p>
+                            <p class="btm">2024.07.24.</p>
+                        </div>
+                    </div><!-- .slide end -->
+                    <div class="swiper-slide">
+                        <div class="slide_wrap">
+                            <img src="img/Group 20.png" alt="공지05">
+                            <p class="top">Joy-Con을 간편하게 충전.
+                                「Joy-Con 충전 스탠드(2way)」
+                                10월 17일(목)에 발매됩니다.</p>
+                            <p class="btm">2024.07.18.</p>
+                        </div>
+                    </div><!-- .slide end -->
+
+
+                </div><!-- .swiper_wrapper end -->
+            </div><!-- .section06_slide end -->
+
+        </div><!-- .inner end -->
+    </section><!-- .section06 end -->
+
+    <footer class="footer">
+        <div class="bg">
+            <div class="line">
+                <img src="img/icon/logo.svg" alt="로고">
+                <div class="sns">
+                    <a href="#"><img src="img/icon/kakako.svg" alt="카카오톡"></a>
+                    <a href="#"><img src="img/icon/facebook.svg" alt="페이스북"></a>
+                    <a href="#"><img src="img/icon/twitter.svg" alt="트위터"></a>
+                    <a href="#"><img src="img/icon/youtube.svg" alt="유튜브"></a>
+                </div><!-- .sns end -->
+            </div><!-- .line end -->
+        </div><!-- .bg end -->
+        <div class="inner">
+            <div class="top">
+                <div class="item">
+                    <strong>한국닌텐도</strong>
+                    <a href="#">
+                        <p>회사개요</p>
+                    </a>
+                    <a href="#">
+                        <p>찾아오시는 길</p>
+                    </a>
+                </div><!-- .item end -->
+                <div class="item">
+                    <strong>소프트웨어</strong>
+                    <a href="#">
+                        <p>Nintendo Switch 소프트웨어</p>
+                    </a>
+                    <a href="#">
+                        <p>소프트웨어 발매 스케줄</p>
+                    </a>
+                    <a href="#">
+                        <p>스마트폰용 앱</p>
+                    </a>
+                </div><!-- .item end -->
+                <div class="item">
+                    <strong>본체 / amiibo</strong>
+                    <a href="#">
+                        <p>Nintendo Switch</p>
+                    </a>
+                    <a href="#">
+                        <p>amiibo</p>
+                    </a>
+                </div><!-- .item end -->
+                <div class="item">
+                    <strong>고객지원</strong>
+                    <a href="#">
+                        <p>Nintendo Switch</p>
+                    </a>
+                    <a href="#">
+                        <p>온라인 고객 상담</p>
+                    </a>
+                    <a href="#">
+                        <p>닌텐도 3DS</p>
+                    </a>
+                </div><!-- .item end -->
+            </div><!-- .top end -->
+            <div class="btm">
+                <div class="tag">
+                    <a href="#">개인정보처리방침 </a>
+                    <a href="#">이용약관</a>
+                </div><!-- .tag end -->
+                <p>ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+                <p><span>사업자등록번호 : 120-87-03578</span><span>대표자명 : 미우라 타카히로</span>상호명 : 한국닌텐도주식회사<span></span></p>
+                <div class="call">
+                    <p>고객지원 문의전화 : 1670-9900 (평일 오전 9시 30분~오후 5시 30분)</p>
+                    <span>※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</span>
+                </div><!-- .call end -->
+            </div><!-- .btm end -->
+        </div><!-- .inner end -->
+    </footer><!-- .footer end -->
+</body>
+
+</html>
