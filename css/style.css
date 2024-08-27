@@ -694,11 +694,17 @@ body {
         background-color: #e60012;
         border-radius: 40px;
         padding: 12px 24px;
+        height: 100%;
     }
     .section01 .inner .item.right .text button img, .section01 .inner .item.left .text button img {
         display: none;
     }
     .section01 .inner .item.right .text {
         right: 40px;
+        row-gap: 25px;
+    }
+    .section01 .inner .item.left .text {
+        row-gap: 25px;
+        left: 30px;
     }
 }
