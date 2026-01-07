@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         $(function () {
-            alert("현재 페이지는 최소 1024px까지 지원합니다.\n추후 업데이트할 예정입니다.")
+            // alert("현재 페이지는 최소 1024px까지 지원합니다.\n추후 업데이트할 예정입니다.")
             /* 메인 비주얼 슬라이드 */
             var swiper2 = new Swiper(".main", {
                 grabCursor: true,
@@ -34,8 +34,8 @@
             });
             /* section02 슬라이드 */
             var swiper = new Swiper(".section02_slide", {
-                slidesPerView: 3.2,
-                spaceBetween: 30,
+                slidesPerView: 1.2,
+                spaceBetween: 15,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -49,13 +49,20 @@
                     },
                     1090: {
                         slidesPerView: 3.5,
+                    },
+                    650: {
+                        slidesPerView: 3.2,
+                    },
+                    450: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20,
                     },
                 },
             });
             /* section04 슬라이드 */
             var swiper = new Swiper(".section04_slide", {
-                slidesPerView: 3.2,
-                spaceBetween: 30,
+                slidesPerView: 1.2,
+                spaceBetween: 15,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -70,12 +77,19 @@
                     1090: {
                         slidesPerView: 3.5,
                     },
+                    650: {
+                        slidesPerView: 3.2,
+                    },
+                    450: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20,
+                    },
                 },
             });
             /* 공지사항 슬라이드 */
             var swiper = new Swiper(".section06_slide", {
-                slidesPerView: 3.2,
-                spaceBetween: 30,
+                slidesPerView: 1.2,
+                spaceBetween: 15,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -86,6 +100,13 @@
                     },
                     1090: {
                         slidesPerView: 3.5,
+                    },
+                    650: {
+                        slidesPerView: 3.2,
+                    },
+                    450: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20,
                     },
                 },
             });
@@ -94,7 +115,7 @@
     </script>
 </head>
 
-<body>
+<body id="main">
     <header class="header">
         <div class="inner">
             <h1>
@@ -154,44 +175,82 @@
                 <button>
                     <img src="img/icon/Vector-1.svg" alt="장바구니">
                 </button>
-                <button>
+                <button class="mob_btn">
                     <img src="img/icon/menu.svg" alt="메뉴">
                 </button>
             </div><!-- util end -->
+            <div class="mob nav">
+                <ul>
+                    <li>
+                        <a href="#">Nintendo</a>
+                        <ul>
+                            <li><a href="#">Nintendo Switch</a></li>
+                            <li><a href="#">소프트웨어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">플레이</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li>
+                        <a href="#">캐릭터</a>
+                        <ul>
+                            <li><a href="#">마리오</a></li>
+                            <li><a href="#">젤다의 전설</a></li>
+                            <li><a href="#">별의 커비</a></li>
+                            <li><a href="#">스플래툰</a></li>
+                            <li><a href="#">피크민</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul>
+                            <li><a href="#">Nintendo Switch<br>고객지원</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">온라인 수리접수</a></li>
+                            <li><a href="#">온라인 고객 상담</a></li>
+                            <li><a href="#">Nintendo Switch<br>Online 서포트</a></li>
+                            <li><a href="#">네트워크 장애<br> 발생 상황</a></li>
+                            <li><a href="#">닌텐도 e숍</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">스토어</a></li>
+                </ul>
+                <p class="close"><img src="img/close.png" alt="닫기"></p>
+            </div>
+            <div class="bg_black"></div>
         </div><!-- .inner end -->
     </header><!-- .header end -->
 
     <div class="main_visual">
-            <div class="swiper main">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img/main visual.png" alt="메인01" class="normal">
-                        <img src="img/main-visual.png" alt="메인01 반응형" class="plus">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/main02.webp" alt="메인02">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/main03.webp" alt="메인03" class="normal">
-                        <img src="img/main-visual02.png" alt="메인03 반응형" class="plus">
-                    </div>
-                </div><!-- swiper_wrapper end -->
-            </div><!-- .main end -->
+        <div class="swiper main">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/main visual.png" alt="메인01" class="normal">
+                    <img src="img/main-visual.png" alt="메인01 반응형" class="plus">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main02.webp" alt="메인02">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main03.webp" alt="메인03" class="normal">
+                    <img src="img/main-visual02.png" alt="메인03 반응형" class="plus">
+                </div>
+            </div><!-- swiper_wrapper end -->
+        </div><!-- .main end -->
     </div><!-- .main_visual end -->
 
     <section class="section01">
         <div class="inner">
             <div class="item left">
-                <span>NINTENDO</span>
                 <div class="text">
+                    <span>NINTENDO</span>
                     <h3>SWITCH</h3>
                     <button>상품 보러가기 <img src="img/icon/Vector-3.svg" alt="바로가기"></button>
                 </div><!-- .text end -->
                 <img src="img/box01.png" alt="스위치" class="box01">
             </div><!-- .item end -->
             <div class="item right">
-                <span>NINTENDO</span>
                 <div class="text">
+                    <span>NINTENDO</span>
                     <h3>소프트웨어</h3>
                     <button>상품 보러가기 <img src="img/icon/Vector-3.svg" alt="바로가기"></button>
                 </div><!-- .text end -->
@@ -557,6 +616,50 @@
             </div><!-- .btm end -->
         </div><!-- .inner end -->
     </footer><!-- .footer end -->
+    <script>
+        $(function () {
+
+            function openMobNav() {
+                $('.header .mob.nav').addClass('on');
+                $('.bg_black').addClass('on');
+                $('body').addClass('no-scroll');
+            }
+
+            function closeMobNav() {
+                $('.header .mob.nav').removeClass('on');
+                $('.bg_black').removeClass('on');
+                $('body').removeClass('no-scroll');
+                $('.header .mob.nav li').removeClass('on');
+            }
+
+            /* 모바일 메뉴 열기 */
+            $('.mob_btn').on('click', function () {
+                openMobNav();
+            });
+
+            /* 닫기 버튼 + 배경 클릭 */
+            $('.close, .bg_black').on('click', function () {
+                closeMobNav();
+            });
+
+            /* 아코디언 */
+            $('.header .mob.nav > ul > li > a').on('click', function (e) {
+                const $li = $(this).parent();
+
+                if (!$li.find('ul').length) return;
+
+                e.preventDefault();
+
+                if ($li.hasClass('on')) {
+                    $li.removeClass('on');
+                } else {
+                    $('.header .mob.nav > ul > li').removeClass('on');
+                    $li.addClass('on');
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
